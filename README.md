@@ -1,64 +1,92 @@
 # Projeto de análise de dados acerca do Racismo Religioso e a Invisibilidade Estatística do Povo de Terreiro 
 
-Sem dados, não há pesquisa, não há política pública e não há proteção. Registrar é, antes de tudo, um ato de permanência.
+  ![status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 
-O Axés é a plataforma digital do Atlas: uma rede onde terreiros, casas de axé, roças e demais espaços sagrados das religiões de matriz africana do Distrito Federal e entorno se cadastram, contam sua história e se encontram.
+  Projeto de análise de dados investigando o histórico da existência de dados públicos sobre intolerância religiosa contra os povos de religiões de matriz africana
 
-Este projeto acadêmico se insere no contexto da entrega do quarto artefato do trabalho feito no PROJETO AXÉS que é da PRODUÇÃO DE MATERIAL EDUCATIVO para professores e jornalistas acerca dos problemas enfrentados pelos povos de religiões de matriz africana a partir da construção de um painel interativo análise de dados de públicos do DF e do BRASIL. 
+## Sobre o projeto
 
-BANCO DE DADOS ESCOLHIDOS ATÉ O MOMENTO:
+  Este trabalho de pesquisa acadêmico é uma investigação sobre o histórico da existência de dados acerca intolerância religiosa no Brasil, assim como a análise dos que estiverem disponíveis. A ideia para esse trabalho surge após a entrada em um projeto de extensão na Universidade de Brasília chamado **Atlas dos espaços das religiões Afro-Brasileiras** que busca desenvolver um Atlas Digital dos Espaços de Religiões Afro-brasileiras no Distrito Federal e Entorno através de metodologia participativa que priorize o protagonismo das comunidades tradicionais de terreiro, contribuindo para a preservação da memória.
 
-SINAN / DATASUS (Violência na Saúde Pública)
+  O objetivo desse projeto é produzir material que possa servir para a pesquisa e produção de material didático para escolas e portais de notícias.
 
-O que é: O sistema do SUS que registra quem entra no hospital vítima de agressão. Existe um campo específico de "Motivação da Violência" que inclui intolerância religiosa/racismo.
-Onde acessar: Plataforma TABNET DATASUS. Acesse datasus.saude.gov.br/informacoes-de-saude-tabnet/, vá em "Epidemiológicas e Morbidade" e busque por "Violência Interpessoal e Autoprovocada (VIVA)". Os microdados podem ser baixados em arquivo CSV para tratar no Python.
+## Definição do Problema
 
-Câmara dos Deputados e Senado (Dados Legislativos)
+Quais resultados podemos inferir a partir do cruzamento das bases de dados públicas disponíveis sobre intolerância religiosa no Brasil nos últimos 10 anos?
 
-O que é: APIs que listam todos os Projetos de Lei (PLs) em tramitação. Útil para monitorar tentativas atuais de cerceamento de direitos ou proteção territorial.
-Onde acessar (Câmara): dadosabertos.camara.leg.br (Possui uma API RESTful excelente documentada em Swagger, perfeita para consumo com a biblioteca requests do Python).
+## Fontes de dados (Em desenvolvimento)
 
-Datajud (Painel do Judiciário)
+| Fonte | Descrição | Status |
+|---|---|---|
+| O SINAN (Sistema de Informação de Agravos de Notificação) é o sistema oficial brasileiro usado para registrar e investigar doenças e problemas de saúde que exigem notificação obrigatória por parte dos serviços médicos - Possui relatório sobre violência | VIVA - Relatório de Vigilância de violência e acidente | Em avaliação |
 
-O que é: O portal do CNJ que você já ia usar no Projeto 3.
-Como aplicar neste projeto: A API pública permite consultar processos. Você pode cruzar classes processuais de "Crimes de Preconceito" (Lei 7.716/89) e ver quanto tempo, em média, a Justiça do DF demora para julgar um caso de racismo religioso em comparação com outros crimes.
-Onde acessar: api-publica.datajud.cnj.jus.br
+## Metodologia
 
-IPEDF (Microdados PDAD)
+Este projeto segue as etapas abaixo:
 
-O que é: Pesquisa Distrital por Amostra de Domicílios. É o "censo" local do DF.
-Onde acessar: ipe.df.gov.br/microdados/. Baixe os microdados e busque as variáveis relacionadas à declaração de religião por Região Administrativa (RA).
+1. Definição do Problema
+2. Aquisição de Dados
+3. Perfilamento de Dados
+4. Validação de Escopo
+5. Preparação de Dados
+6. Análise Exploratória / Modelagem
+7. Documentação e Achados
+8. Implantação e Disseminação
 
-IBGE (Censo Demográfico e SIDRA)
+<!-- 
+[Descreva brevemente decisões metodológicas relevantes: por que essa fonte, por que esse tipo de análise, limitações conhecidas.]
+-->
 
-O que fornece: Os dados absolutos sobre a declaração de religião, cor e raça da população brasileira, descendo até o nível de município e setor censitário. (Nota: Os dados completos de religião do Censo 2022 estão em fase de tabulação e divulgação, sendo o Censo 2010 a base histórica mais granular).
+## Tecnologias utilizadas
 
-Como aplicar no projeto: O IBGE fornece a "base de cálculo". Se o Disque 100 mostra 50 ataques no DF e 50 em SP, o número absoluto não diz muito. Cruzando com o IBGE, você descobre a taxa proporcional (ex: 5 ataques a cada 1.000 praticantes de umbanda no DF vs. 1 a cada 1.000 em SP), provando estatisticamente onde a comunidade é mais vulnerável.
+- Linguagem: [Python]
+- Bibliotecas principais: [pandas, scikit-learn, shiny]
+- Banco de dados: [PostgreSQL]
+- Visualização: [Power BI / Streamlit]
+  
+<!-- 
+## Estrutura do repositório (opcional)
 
-Onde acessar: O sistema SIDRA (sidra.ibge.gov.br) permite montar tabelas personalizadas cruzando Religião e Cor/Raça. Para automatizar no Python, o IBGE possui uma API pública excelente (servicodados.ibge.gov.br/api/docs).
+```
+[cole aqui a árvore de pastas quando o projeto já tiver uma]
+```
 
-SINESP (Ministério da Justiça e Segurança Pública)
+## Como rodar (preencher quando houver algo executável)
 
-O que fornece: A consolidação nacional dos Boletins de Ocorrência (BOs) registrados pelas Polícias Civis de todos os estados.
+```bash
+Em desenvolvimento
+```
+-->
+## Roadmap
 
-Como aplicar no projeto: Fundamental para a pergunta de pesquisa sobre o "Apagamento Institucional". Você pode cruzar os dados de denúncias do Disque 100 com os registros oficiais do SINESP para o mesmo período e estado, medindo estatisticamente a subnotificação criminal (a diferença entre quem denuncia na ouvidoria e quem consegue registrar o BO na delegacia).
+- [x] Definição do problema
+- [ ] Coleta de dados
+- [ ] Validação de escopo
+- [ ] Análise exploratória / modelagem
+- [ ] Documentação dos achados
+- [ ] Publicação (dashboard/site)
 
-Onde acessar: Disponível no Portal de Dados Abertos do Ministério da Justiça (dados.mj.gov.br), na seção de Estatísticas de Segurança Pública.
+## Achados principais 
 
-Fundação Cultural Palmares
+Em desenvolvimento
 
-O que fornece: O cadastro e a certificação oficial de comunidades tradicionais de matriz africana e territórios quilombolas.
+## Limitações conhecidas
 
-Como aplicar no projeto: Essencial para a análise espacial (Geografia do Racismo). Muitos terreiros estão inseridos em comunidades que lutam pelo reconhecimento do território. Cruzar as coordenadas geográficas dessas comunidades com dados de conflitos fundiários e especulação imobiliária ajuda a mapear o risco territorial.
+Em desenvolvimento
 
-Onde acessar: O painel de certificações pode ser extraído do Portal de Dados Abertos do Governo Federal buscando pelas bases ativas da Fundação Palmares (dados.gov.br).
+## Fontes e referências
 
-IPEA (Instituto de Pesquisa Econômica Aplicada)
+https://escoladedados.org/dicas-para-mapear-dados-sobre-a-fe-e-cobrir-o-racismo-religioso/
+https://datasus.saude.gov.br/informacoes-de-saude-tabnet/
+https://lhs.unb.br/axes-social/about/
 
-O que fornece: O IPEA consolida o Atlas da Violência, uma base tratada que cruza segurança pública com indicadores socioeconômicos.
+## Autor
 
-Como aplicar no projeto: Serve para contextualizar o racismo religioso dentro do racismo estrutural. O IPEA permite cruzar a violência com a vulnerabilidade social da Região Administrativa (RA) no DF, testando a hipótese de que terreiros em áreas mais pobres sofrem tipos de violência diferentes (ex: violência física vs. intolerância em escolas) daqueles em áreas nobres.
+[Diego Paz] — [[LinkedIn](https://www.linkedin.com/in/diego-paz-7ab54a282/)] 
 
-Onde acessar: A plataforma Ipeadata (ipeadata.gov.br) permite o download em formato .csv de séries históricas de indicadores sociais e de violência.
+## Licença (opcional)
 
+[MIT / não aplicável]
+
+**Sem dados, não há pesquisa, não há política pública e não há proteção. Registrar é, antes de tudo, um ato de permanência.**
 
