@@ -4,15 +4,18 @@
 
   Projeto de análise de dados investigando o histórico da existência de dados públicos sobre intolerância religiosa contra os povos de religiões de matriz africana
 
+
 ## Sobre o projeto
 
   Este trabalho de pesquisa acadêmico é uma investigação sobre o histórico da existência de dados acerca intolerância religiosa no Brasil, assim como a análise dos que estiverem disponíveis. A ideia para esse trabalho surge após a entrada em um projeto de extensão na Universidade de Brasília chamado **Atlas dos espaços das religiões Afro-Brasileiras** que busca desenvolver um Atlas Digital dos Espaços de Religiões Afro-brasileiras no Distrito Federal e Entorno através de metodologia participativa que priorize o protagonismo das comunidades tradicionais de terreiro, contribuindo para a preservação da memória.
 
   O objetivo desse projeto é produzir material que possa servir para a pesquisa e produção de material didático para escolas e portais de notícias.
 
+
 ## Definição do Problema
 
 Quais resultados podemos inferir a partir do cruzamento das bases de dados públicas disponíveis sobre intolerância religiosa no Brasil nos últimos 10 anos?
+
 
 ## Fontes de dados (Em desenvolvimento)
 
@@ -56,7 +59,7 @@ Este projeto segue as etapas abaixo:
 ```bash
 Em desenvolvimento
 ```
--->
+<!-- -->
 ## Roadmap
 
 - [x] Definição do problema
@@ -65,7 +68,7 @@ Em desenvolvimento
 - [ ] Análise exploratória / modelagem
 - [ ] Documentação dos achados
 - [ ] Publicação (dashboard/site)
-
+<!--
 ## Achados principais 
 
 Em desenvolvimento
@@ -73,16 +76,19 @@ Em desenvolvimento
 ## Limitações conhecidas
 
 Em desenvolvimento
-
+ -->
+ 
 ## Fontes e referências
 
 https://escoladedados.org/dicas-para-mapear-dados-sobre-a-fe-e-cobrir-o-racismo-religioso/
+
 https://datasus.saude.gov.br/informacoes-de-saude-tabnet/
+
 https://lhs.unb.br/axes-social/about/
 
 ## Autor
 
-[Diego Paz] — [[LinkedIn](https://www.linkedin.com/in/diego-paz-7ab54a282/)] 
+[Diego Paz] — [Estudante de computação da Universidade de Brasília] - [[LinkedIn](https://www.linkedin.com/in/diego-paz-7ab54a282/)] 
 
 ## Licença (opcional)
 
